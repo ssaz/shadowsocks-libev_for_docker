@@ -59,14 +59,15 @@ echo "----- ----- ----- ----- -----"
 # run
 if [ "${NS_OFF}" != "true" ]
 then
-    echo "net-speeder [enabled]"
+    echo "net-speeder ${PARAM_NS_DEVICE} [enabled]"
     echo "----- ----- ----- ----- -----"
     ./net-speeder/net_speeder ${PARAM_NS_DEVICE} "ip" &
     ip a
-    ping baidu.com -c 5
+    ping yahoo.com -c 5
     echo "----- ----- ----- ----- -----"
     echo "----- ----- ----- ----- -----"
     echo "----- ----- ----- ----- -----"
 fi
+
 /usr/bin/ss-server -p ${PARAM_SS_PORT} -k ${PARAM_SS_PASSWORD} \
 -m ${PARAM_SS_METHOD} --fast-open -a nobody -d 8.8.8.8

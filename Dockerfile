@@ -10,7 +10,7 @@ RUN yum install -y shadowsocks-libev; yum clean all
 
 # net-speeder
 #RUN yum install -y epel-release; yum clean all
-RUN yum install -y libnet libpcap libnet-devel libpcap-devel git iproute; yum clean all
+RUN yum install -y gcc libnet libpcap libnet-devel libpcap-devel git iproute; yum clean all
 RUN git clone https://github.com/snooda/net-speeder.git
 WORKDIR /net-speeder
 #OpenVZ with -DCOOKED, KVM Xen RealPhysicalServer
