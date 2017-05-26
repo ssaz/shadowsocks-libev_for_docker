@@ -29,7 +29,7 @@ Not shadowsocks dont support forbidden-ip workers;
 
 Dont support pid log verbose-mode;
 
-Done support deamon and graceful with supervisor;
+Dont support deamon and graceful with supervisor;
 
 Dont support kcptun finalspeed;
 
