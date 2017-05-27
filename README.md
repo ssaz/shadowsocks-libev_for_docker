@@ -134,4 +134,6 @@ ssorg/shadowsocks-libev_for_docker | cut -c 1-12 | xargs docker logs -f
 
 slow since QoS, change port to 80 25 443 995 3389
 
+chacha20-ietf-poly1305 is better in some mobile device
+
 -END-
