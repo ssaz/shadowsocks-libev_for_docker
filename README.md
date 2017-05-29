@@ -13,7 +13,7 @@ Default rand password;
 
 Options -p -k -m for service;
 
-Option value -p=1949 -k=${rand and output in docker log} -m=aes-256-gcm
+Option value -p=1949 -k=${rand and output in docker log} -m=aes-256-gcm;
 
 Option Method are aes-256-gcm chacha20-ietf-poly1305 and 128/192 size;
 
